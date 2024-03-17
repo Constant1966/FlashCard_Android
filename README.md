@@ -15,4 +15,4 @@
 - [x] Further customize and style the card
 - [x] Add a button that will toggle hiding and showing the answer choices
 
-<img src="https://github.com/Constant1966/FlashCard_Android/blob/master/flashCard.gif" width="300" height="400" />
+<img src="https://github.com/Constant1966/FlashCard_Android/blob/master/flashCard.gif" width="400" height="400" />
