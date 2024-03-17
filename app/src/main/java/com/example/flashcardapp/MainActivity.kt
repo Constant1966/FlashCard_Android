@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         val icon_eye_1 = findViewById<ImageView>(R.id.toggle_choices_visibility)
         val icon_eye_2 = findViewById<ImageView>(R.id.toggle_choices_visibility_2)
-        val flashcard_Layout = findViewById<RelativeLayout>(R.id.flashcard_Layout)
 
         val isShowingAnswers = true
 
@@ -48,17 +47,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        flashcard_Layout.setOnClickListener {
-            flashcardQuestion.visibility = View.VISIBLE
-            findViewById<View>(R.id.flashcard_answer_1).setBackgroundColor(getResources().getColor(R.color.background_text, null))
-            findViewById<View>(R.id.flashcard_answer_2).setBackgroundColor(getResources().getColor(R.color.background_text, null))
-            findViewById<View>(R.id.flashcard_answer_3).setBackgroundColor(getResources().getColor(R.color.background_text, null))
-
-        }
-
-
-
-
         if (isShowingAnswers)
         {
             icon_eye_2.setOnClickListener {
@@ -68,6 +56,10 @@ class MainActivity : AppCompatActivity() {
                 flashcardAnswer_1.visibility = View.INVISIBLE
                 flashcardAnswer_2.visibility = View.INVISIBLE
                 flashcardAnswer_3.visibility = View.INVISIBLE
+
+                findViewById<View>(R.id.flashcard_answer_1).setBackgroundColor(getResources().getColor(R.color.background_text, null))
+                findViewById<View>(R.id.flashcard_answer_2).setBackgroundColor(getResources().getColor(R.color.background_text, null))
+                findViewById<View>(R.id.flashcard_answer_3).setBackgroundColor(getResources().getColor(R.color.background_text, null))
             }
 
         }
@@ -81,6 +73,11 @@ class MainActivity : AppCompatActivity() {
                     flashcardAnswer_1.visibility = View.VISIBLE
                     flashcardAnswer_2.visibility = View.VISIBLE
                     flashcardAnswer_3.visibility = View.VISIBLE
+
+
+                    findViewById<View>(R.id.flashcard_answer_1).setBackgroundColor(getResources().getColor(R.color.background_text, null))
+                    findViewById<View>(R.id.flashcard_answer_2).setBackgroundColor(getResources().getColor(R.color.background_text, null))
+                    findViewById<View>(R.id.flashcard_answer_3).setBackgroundColor(getResources().getColor(R.color.background_text, null))
                 }
             }
 
